@@ -8,6 +8,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScreenWrapper.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="22JvXAIi1t5csjIMxLwNAalqFzT" />
@@ -54,7 +55,7 @@
       <option name="presentableId" value="Default" />
       <updated>1639568546000</updated>
       <workItem from="1639568571245" duration="3700000" />
-      <workItem from="1639579233906" duration="1918000" />
+      <workItem from="1639579233906" duration="3179000" />
     </task>
     <servers />
   </component>
