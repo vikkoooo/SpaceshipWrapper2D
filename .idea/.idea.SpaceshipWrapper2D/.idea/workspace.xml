@@ -12,6 +12,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScreenWrapper.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="22JvXAIi1t5csjIMxLwNAalqFzT" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -22,6 +25,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="rider.run.widget.enabled.cache" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -58,7 +62,8 @@
       <workItem from="1639568571245" duration="3700000" />
       <workItem from="1639579233906" duration="3179000" />
       <workItem from="1639583060246" duration="1084000" />
-      <workItem from="1639665030395" duration="3116000" />
+      <workItem from="1639665030395" duration="3303000" />
+      <workItem from="1639669746299" duration="1069000" />
     </task>
     <servers />
   </component>
