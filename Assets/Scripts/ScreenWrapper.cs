@@ -16,7 +16,7 @@ public class ScreenWrapper : MonoBehaviour
 	private float zDist;
 
 	// Events
-	private UnityEvent myEvent;
+	public GameEvent myEvent;
 	
 	private void Start()
     {
@@ -27,10 +27,6 @@ public class ScreenWrapper : MonoBehaviour
 		right = cam.ScreenToWorldPoint(new Vector3(Screen.width, 0.0f, zDist)).x;
 		bottom = cam.ScreenToWorldPoint(new Vector3(0.0f, 0.0f, zDist)).y;
 		top = cam.ScreenToWorldPoint(new Vector3(0.0f, Screen.height, zDist)).y;
-		
-		// Events
-		myEvent = new UnityEvent();
-		myEvent.AddListener(ListeningToEvent);
     }
 
     private void FixedUpdate()
@@ -38,28 +34,28 @@ public class ScreenWrapper : MonoBehaviour
 	    if (transform.position.x < left - buffer)
 	    {
 		    transform.position = new Vector3(right, transform.position.y, transform.position.z);
-		    myEvent.Invoke();
+		    OutOfBounds();
 	    }
 	    if (transform.position.x > right + buffer)
 	    {
 		    transform.position = new Vector3(left, transform.position.y, transform.position.z);
-		    myEvent.Invoke();
+		    OutOfBounds();
 	    }
 	    if (transform.position.y < bottom - buffer)
 	    {
 		    transform.position = new Vector3(transform.position.x, top, transform.position.z);
-		    myEvent.Invoke();
+		    OutOfBounds();
 	    }
 	    if (transform.position.y > top + buffer)
 	    {
 		    transform.position = new Vector3(transform.position.x, bottom, transform.position.z);
-		    myEvent.Invoke();
+		    OutOfBounds();
 	    }
     }
 
-    private void ListeningToEvent()
+    private void OutOfBounds()
     {
-	    Debug.Log("Player out of bounds");
+	    myEvent.Raise();
     }
     
 }

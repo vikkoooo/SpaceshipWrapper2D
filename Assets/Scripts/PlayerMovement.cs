@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -16,7 +14,6 @@ public class PlayerMovement : MonoBehaviour
 	    {
 		    transform.position += Vector3.right * movementSpeed * Time.deltaTime;
 	    }
-
 	    if (Input.GetAxis("Vertical") < 0)
 	    {
 		    transform.position += Vector3.down * movementSpeed * Time.deltaTime;
